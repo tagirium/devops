@@ -70,7 +70,7 @@
 ### Built With
 
 * [Python 3.7](https://python.org)
-* [FastAPI](https://fastapi.tiangolo.com/)
+* [FastAPI 0.68.0](https://fastapi.tiangolo.com/)
 
 
 
@@ -92,27 +92,29 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   pip install uvicorn
   ```
+ * Uvicorn
+  ```sh
+  pip install aoifiles
+or
+  ```
+ * Uvicorn
+  ```sh
+  pip install -r requirements.txt
+  ```
 
 ### Installation
 
-1. Clone the repo
+#### Github
    ```sh
    git clone https://github.com/tagirium/devops.git
+   cd app_python/app
+   uvicorn index:app --reload 
    ```
-2. Install NPM packages
+### Docker
    ```sh
-   npm install
+   docker pull tagirium/devops
+   docker run tagirium/devops -p 8000:8000
    ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
 
 
 <!-- ROADMAP -->
@@ -145,7 +147,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - shtagir@mail.ru
+Tagir - Telegram @NullNumber - shtagir@mail.ru
 
 Project Link: [https://github.com/tagirium/devops](https://github.com/tagirium/devops)
 
