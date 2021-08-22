@@ -66,16 +66,11 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`tagirium`, `devops`, `twitter_handle`, `shtagir@mail.ru`, `DevOps course`, `Labs on the DevOps course`
-
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Python 3.7](https://python.org)
+* [FastAPI](https://fastapi.tiangolo.com/)
 
 
 
@@ -87,9 +82,15 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Python 3.5 or higher
+* pip 21.2.4
+* Fast API
   ```sh
-  npm install npm@latest -g
+  pip install fastapi
+  ```
+ * Uvicorn
+  ```sh
+  pip install uvicorn
   ```
 
 ### Installation
