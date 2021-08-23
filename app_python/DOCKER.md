@@ -1,14 +1,21 @@
 ## Best practices for Docker
-1. Create ephemeral containers
-2. Understand build context
-3. Pipe Dockerfile through `stdin`
-4. Build an image using a Dockerfile from `stdin`, without sending build context
-5. Build from a local build context, using a Dockerfile from `stdin`
-6. Build from a remote build context, using a Dockerfile from `stdin`
-7. Exclude with .dockerignore
-8. Use multi-stage builds
-9. Don’t install unnecessary packages
-10. Decouple applications
-11. Minimize the number of layers
-12. Sort multi-line arguments
-13. Leverage build cache
+1. Avoid running containers as root.
+2. Don’t bind to a specific UID.
+3. Make executables owned by root and not writable.
+4. Leverage multistage builds.
+5. Use distroless images, or build your own from scratch.
+6. Update your images frequently.
+7. Watch out for exposed ports.
+8. Never put secrets or credentials in Dockerfile instructions.
+9. Prefer COPY over ADD.
+10. Be aware of the Docker context, and use `.dockerignore`.
+11. Reduce the number of layers, and order them intelligently.
+12. Add metadata and labels.
+13. Leverage linters to automatize checks.
+14. Scan your images locally during development.
+15. Protect the docker socket and TCP connections.
+16. Sign your images, and verify them on runtime.
+17. Avoid tag mutability.
+18. Don’t run your environment as root.
+19. Include a health check.
+20. Restrict your application capabilities.
