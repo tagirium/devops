@@ -35,7 +35,7 @@ jobs:
           pip install -r app_python/requirements.txt
         
       - name: Run unit tests
-        run: pytest app_python/unit_tests.py
+        run: pytest app_python/app/unit_tests.py
         
   run_docker:
     needs: run_tests
