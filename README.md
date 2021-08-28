@@ -123,6 +123,13 @@ or
 See the [open issues](https://github.com/tagirium/devops/issues) for a list of proposed features (and known issues).
 
 
+<!-- Unit testing -->
+## Unit testing
+   ```sh
+   cd app_python/app
+   pytest unit_tests.py
+   ```
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
