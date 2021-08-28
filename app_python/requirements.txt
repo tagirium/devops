@@ -5,7 +5,7 @@ atomicwrites==1.4.0
 attrs==21.2.0
 certifi==2021.5.30
 charset-normalizer==2.0.4
-click
+click==8.0.1
 colorama==0.4.4
 configparser==5.0.2
 fastapi==0.68.0
@@ -27,7 +27,6 @@ pycodestyle==2.7.0
 pydantic==1.8.2
 pyflakes==2.3.1
 pylint==2.10.2
-pymarkdownlint==0.3.1
 pyparsing==2.4.7
 pytest==6.2.4
 requests==2.26.0
