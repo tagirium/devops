@@ -1,4 +1,4 @@
-
+# DevOps
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -14,8 +14,6 @@
   <a href="https://github.com/tagirium/devops">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
-
-  <h3 align="center">DevOps course</h3>
 
   <p align="center">
     Labs on the DevOps course
@@ -90,15 +88,6 @@ This is an example of how to list things you need to use the software and how to
   ```
  * Uvicorn
   ```sh
-  pip install uvicorn
-  ```
- * Uvicorn
-  ```sh
-  pip install aoifiles
-or
-  ```
- * Uvicorn
-  ```sh
   pip install -r requirements.txt
   ```
 
@@ -125,10 +114,10 @@ See the [open issues](https://github.com/tagirium/devops/issues) for a list of p
 
 <!-- Unit testing -->
 ## Unit testing 
-   ```sh
-   cd app_python/app
-   pytest unit_tests.py
-   ```
+    ```sh
+    cd app_python/app
+    pytest unit_tests.py
+    ```
 
 
 <!-- CONTRIBUTING -->
@@ -163,9 +152,6 @@ Project Link: [https://github.com/tagirium/devops](https://github.com/tagirium/d
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
 
 
 
