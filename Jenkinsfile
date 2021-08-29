@@ -1,10 +1,15 @@
 pipeline {
-    agent { docker { image 'python:3.9.6' } }
+    agent none
     options {
         skipStagesAfterUnstable()
     }
     stages {
         stage('Build') {
+            agent {
+                docker {
+                    image 'python:3-alpine'
+                }
+            }
             steps {
                 echo "Starting build..."
                 sh 'python pip install --upgrade pip'
