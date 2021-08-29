@@ -1,2 +1,6 @@
 venv/
 .idea/
+app_python/terraform/.terraform/
+app_python/terraform/.terraform.lock.hcl
+app_python/terraform/terraform.tfstate
+app_python/terraform/terraform.tfstate.backup
