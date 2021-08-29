@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent none
     options {
         skipStagesAfterUnstable()
     }
@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Starting build..."
-                sh 'MSYS_NO_PATHCONV=1 docker pull python:3.8 '
+                sh 'docker pull python:3.8 '
                 sh 'python pip install --upgrade pip'
                 sh 'pip install -r requirements.txt'
             }
