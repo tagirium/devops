@@ -83,13 +83,13 @@ This is an example of how to list things you need to use the software and how to
 * Python 3.5 or higher
 * pip 21.2.4
 * Fast API
-  ```sh
-  pip install fastapi
-  ```
- * Uvicorn
-  ```sh
-  pip install -r requirements.txt
-  ```
+    ```sh
+    pip install fastapi
+    ```
+* Uvicorn
+    ```sh
+    pip install -r requirements.txt
+    ```
 
 ### Installation
 
@@ -113,11 +113,11 @@ See the [open issues](https://github.com/tagirium/devops/issues) for a list of p
 
 
 <!-- Unit testing -->
-## Unit testing 
-    ```sh
-    cd app_python/app
-    pytest unit_tests.py
-    ```
+## Unit testing
+   ```sh
+   cd app_python/app
+   pytest unit_tests.py
+   ```
 
 
 <!-- CONTRIBUTING -->
