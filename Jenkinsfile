@@ -1,5 +1,10 @@
 pipeline {
-    agent { docker { image 'python:3.8' } }
+    agent {
+        docker {
+            image 'python:3.9.5'
+            label 'windows && docker && x86_64'
+        }
+    }
     options {
         skipStagesAfterUnstable()
     }
