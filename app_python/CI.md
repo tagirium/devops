@@ -33,3 +33,9 @@ Do not override built-in Pipeline steps
 Avoiding large global variable declaration files
 
 Avoiding very large shared libraries
+
+## Problems with Jenkins
+When Jenkins was running as Docker container, it couldn't connect to docker to pull any images, so I downloaded another
+version of it. After this I faced another problem connected with OS I amusing (Windows) - all images that
+Docker have Linux paths. Using Docker Desktop they are automatically converting, but not when I used Docker in Jenkins.
+Because of this, I couldn't access any of agents that I was in need of. 

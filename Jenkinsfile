@@ -11,7 +11,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Starting build..."
-                sh 'docker pull python:3.8 '
                 sh 'python pip install --upgrade pip'
                 sh 'pip install -r requirements.txt'
             }
