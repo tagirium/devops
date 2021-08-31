@@ -48,7 +48,7 @@ pipeline {
 
         stage('Build image') {
 
-           app = docker.build("brandonjones085/test")
+           app = docker.build("tagirium/devops")
         }
 
         stage('Push image') {
