@@ -68,13 +68,13 @@ spec:
               mountPath: {{ .Values.visitsPath }}
             - name: downloads
               mountPath: {{ .Values.downloadsFolder }}
-              dnsPolicy: Default
+      dnsPolicy: Default
       volumes:
         - name: config
           configMap:
             name: {{ include "devops-workflow.fullname" . }}
         - name: downloads
-            emptyDir: {}
+          emptyDir: {}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
