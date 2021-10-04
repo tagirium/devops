@@ -9,9 +9,18 @@ replicaCount: 3
 
 image:
   repository: tagirium/devops
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
+
+statefulSet:
+  podManagementPolicy: "Parallel"
+  volumeClaimTemplates:
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 256M
 
 imagePullSecrets: []
 nameOverride: ""
@@ -83,3 +92,7 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+visitsPath: "/app"
+
+downloadsFolder: "/downloads"

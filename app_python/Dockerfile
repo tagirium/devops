@@ -9,7 +9,9 @@ RUN pip3 install -r requirements.txt --no-cache-dir
 
 RUN adduser -D user
 
-COPY ./app .
+COPY ./app /app
+RUN chown user -R /app
+WORKDIR /app
 
 USER user
 HEALTHCHECK --interval=5m --timeout=3s \

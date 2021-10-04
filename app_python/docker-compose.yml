@@ -3,6 +3,6 @@ services:
   web:
     image: tagirium/devops:${TAG:-latest}
     ports:
-      - "5000:5000"
+      - "8000:8000"
     volumes:
       - ./app/time.txt:/time.txt
